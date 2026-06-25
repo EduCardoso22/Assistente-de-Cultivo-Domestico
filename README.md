@@ -39,6 +39,7 @@ O ciclo de desenvolvimento ocorreu sob um fluxo iterativo, adotando a metodologi
 * **Ciclos:** Organização em *Sprints* de uma semana.
 * **Cerimônias Praticadas:** *Sprint Planning* para refinamento e seleção do *Backlog*, *Daily Scrum* restrito a 15 minutos para alinhamento diário e *Sprint Review* para demonstração do incremento de texto.
 
+Além disso, foi montado um quadro Kanban para organização e distribuição de tarefas entre os membros da equipe. O mesmo pode ser acessado através [deste link](https://trello.com/invite/b/6a3417d2cb6f49ea1a0ade48/ATTI045dff1c851e743fe7c04f84fb2991ceF2520810/assistente-de-cultivo).
 ---
 
 ## 👥 A Equipe
