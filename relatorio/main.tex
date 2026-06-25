@@ -7,6 +7,7 @@
 \usepackage{xcolor}
 \usepackage{url}
 \usepackage{enumitem}
+\usepackage{float}
 \usepackage{eso-pic}
 \usepackage{fancyhdr}
 \usepackage{lastpage}
@@ -133,9 +134,9 @@ A modelagem do sistema estabelece o plano estrutural e comportamental que serve 
 \subsection{Diagrama de Casos de Uso}
 O Diagrama de Casos de Uso expõe as fronteiras do sistema e como o ator (\textit{Utilizador}) interage ativamente com a aplicação através dos comandos disponíveis no terminal.
 
-\begin{figure}[h]
+\begin{figure}[H]
     \centering
-    \includegraphics[width=0.75\textwidth]{Imagens/diagrama_casos_uso.png}
+    \includegraphics[width=0.6\textwidth]{Imagens/diagrama_casos_uso.png}
     \caption{Diagrama de Casos de Uso do Assistente CLI.}
     \label{fig:casos_uso}
 \end{figure}
@@ -143,9 +144,9 @@ O Diagrama de Casos de Uso expõe as fronteiras do sistema e como o ator (\texti
 \subsection{Diagrama de Classes}
 O Diagrama de Classes detalha a visão estática do domínio. Como o sistema não possui interface gráfica, evitou-se o acoplamento com bibliotecas visuais complexas. O fluxo de entrada e saída é gerido por uma classe controladora centralizada chamada \textbf{MenuPrompt}, que se comunica com as classes de entidade e negócio: \textbf{Usuario}, \textbf{Planta}, \textbf{Especie} e \textbf{RegistroDiario}.
 
-\begin{figure}[h]
+\begin{figure}[H]
     \centering
-    \includegraphics[width=0.85\textwidth]{Imagens/diagrama_classes.png}
+    \includegraphics[width=\textwidth]{Imagens/diagrama_classes.png}
     \caption{Diagrama de Classes Orientado a Objetos.}
     \label{fig:classes}
 \end{figure}
@@ -153,10 +154,10 @@ O Diagrama de Classes detalha a visão estática do domínio. Como o sistema nã
 \subsection{Diagrama Dinâmico (Sequência)}
 O Diagrama de Sequência mapeia a perspetiva dinâmica do software, ilustrando a troca de mensagens cronológica entre os objetos do sistema quando o utilizador solicita a listagem de plantas e o cálculo automático dos alertas de rega pendentes.
 
-\begin{figure}[h]
+\begin{figure}[H]
     \centering
-    \includegraphics[width=0.8\textwidth]{Imagens/diagrama_sequencia.png}
-    \caption{Diagrama de Sequência: Processamento e Exibição de Alertas.}
+    \includegraphics[width=0.85\textwidth]{Imagens/diagrama_sequencia.png}
+    \caption{Diagrama de Sequência: Registrar Planta.}
     \label{fig:sequencia}
 \end{figure}
 
