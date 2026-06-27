@@ -62,17 +62,17 @@
 % =========================================================================
 \section{Processo de Software}
 
-Para o desenvolvimento do \textit{Assistente de Cultivo Doméstico}, a equipa optou por um fluxo de processo iterativo, no qual as fases metodológicas podem ser revisitadas e ajustadas ciclicamente ao longo do projeto. Como suporte operacional a este fluxo, foi adotada a metodologia ágil Scrum. 
+Para o desenvolvimento do \textit{Assistente de Cultivo Doméstico}, a equipe optou por um fluxo de processo iterativo, no qual as fases metodológicas podem ser revisitadas e ajustadas ciclicamente ao longo do projeto. Como suporte operacional a este fluxo, foi adotada a metodologia ágil Scrum. 
 
-Esta escolha justifica-se pelo facto de a agilidade promover uma resposta rápida, eficaz e adaptativa às mudanças de requisitos. O Scrum, especificamente, oferece um modelo flexível de trabalho ideal para equipas pequenas e projetos com prazos rígidos, garantindo a entrega rápida de incrementos funcionais de software.
+Esta escolha justifica-se pelo facto de a agilidade promover uma resposta rápida, eficaz e adaptativa às mudanças de requisitos. O Scrum, especificamente, oferece um modelo flexível de trabalho ideal para equipes pequenas e projetos com prazos rígidos, garantindo a entrega rápida de incrementos funcionais de software.
 
-\subsection{Organização e Papéis da Equipa}
-Em conformidade com os princípios de equipas ágeis auto-organizadas e com alta autonomia , os papéis foram divididos focando-se nos membros diretamente comprometidos com a construção e entrega do produto (papel análogo aos \textit{"porcos"} na literatura clássica do Scrum):
+\subsection{Organização e Papéis da equipe}
+Em conformidade com os princípios de equipes ágeis auto-organizadas e com alta autonomia , os papéis foram divididos focando-se nos membros diretamente comprometidos com a construção e entrega do produto:
 
 \begin{itemize}[leftmargin=*]
     \item \textbf{Product Owner (Damares Gaia):} Responsável por gerir e priorizar o \textit{Product Backlog}, alinhando os cenários desejados com as necessidades de negócio do ecossistema de cultivo.
-    \item \textbf{Scrum Master (Talles Souza):} Atua como o líder do processo, responsável por garantir a aderência às práticas do framework, remover impedimentos técnicos e facilitar o fluxo de trabalho da equipa.
-    \item \textbf{Time de Desenvolvimento (Eduardo, Damares e Talles):} Equipa técnica autogerida encarregue de projetar a arquitetura, desenhar os diagramas de modelagem, codificar a aplicação e implementar o plano de testes.
+    \item \textbf{Scrum Master (Talles Souza):} Atua como o líder do processo, responsável por garantir a aderência às práticas do framework, remover impedimentos técnicos e facilitar o fluxo de trabalho da equipe.
+    \item \textbf{Time de Desenvolvimento (Eduardo, Damares e Talles):} equipe técnica autogerida encarregue de projetar a arquitetura, desenhar os diagramas de modelagem, codificar a aplicação e implementar o plano de testes.
 \end{itemize}
 
 \subsection{Dinâmica de Trabalho e Cerimónias}
@@ -80,7 +80,7 @@ O ciclo de desenvolvimento foi estruturado em \textit{Sprints} de uma semana. A 
 \begin{itemize}[leftmargin=*]
     \item \textbf{Planeamento do Sprint (\textit{Sprint Planning}):} Reunião realizada no início de cada ciclo para refinar o \textit{Product Backlog} e selecionar os itens prioritários que farão parte do \textit{Sprint Backlog} da semana.
     \item \textbf{Reunião Diária (\textit{Daily Scrum}):} Encontros de alinhamento com duração estrita de 15 minutos. Cada membro responde brevemente a três perguntas essenciais: o que foi feito desde o último encontro, o que será feito no dia corrente e se existe algum impedimento que bloqueie o progresso.
-    \item \textbf{Revisão do Sprint (\textit{Sprint Review}):} Sessão realizada ao fecho de cada iteração para demonstrar o incremento de software em modo texto desenvolvido e recolher avaliações críticas da equipa.
+    \item \textbf{Revisão do Sprint (\textit{Sprint Review}):} Sessão realizada ao fecho de cada iteração para demonstrar o incremento de software em modo texto desenvolvido e recolher avaliações críticas da equipe.
 \end{itemize}
 
 \vspace{2em}
@@ -90,7 +90,7 @@ O ciclo de desenvolvimento foi estruturado em \textit{Sprints} de uma semana. A 
 % =========================================================================
 \section{Requisitos de Software}
 
-A especificação do sistema foi detalhada por meio da identificação de requisitos funcionais e não funcionais, mapeados sob a forma de Histórias de Usuário (\textit{User Stories}) para guiar o desenvolvimento iterativo focado no valor prático da aplicação. Dado que o sistema será executado exclusivamente via Interface de Linha de Comando (CLI) no terminal, o escopo foi projetado para assegurar robustez textual.
+A especificação do sistema foi detalhada por meio da identificação de requisitos funcionais e não funcionais, mapeados sob a forma de Histórias de Usuário para guiar o desenvolvimento iterativo focado no valor prático da aplicação. Dado que o sistema será executado exclusivamente via Interface de Linha de Comando (CLI) no terminal, o escopo foi projetado para assegurar robustez textual.
 
 \subsection{Requisitos Funcionais (RF)}
 Os requisitos funcionais determinam as ações, recursos e comportamentos que o sistema de terminal deve fornecer:
@@ -173,7 +173,7 @@ A organização arquitetural do assistente de cultivo seguiu princípios consoli
 \begin{itemize}[leftmargin=*]
     \item \textbf{Integridade Conceitual:} O padrão estrutural do sistema é uniforme. Todas as classes seguem a mesma convenção de nomenclatura e separação de responsabilidades, garantindo harmonia no design abstrato da aplicação.
     \item \textbf{Coesão:} Cada componente possui uma responsabilidade única e bem delimitada. A classe \textit{MenuPrompt} restringe-se à captura e exibição de strings no console, enquanto a classe \textit{Planta} gerencia estritamente as regras de estado do vegetal.
-    \item \textbf{Baixo Acoplamento:} A separação total entre as classes de negócio e o console gerou um acoplamento extremamente reduzido. Caso a equipa decida futuramente migrar a interface do terminal para uma aplicação móvel Android ou Web, a lógica central de cálculo de rega e os modelos de dados permanecerão intactos, sendo necessária apenas a substituição da camada de interface.
+    \item \textbf{Baixo Acoplamento:} A separação total entre as classes de negócio e o console gerou um acoplamento extremamente reduzido. Caso a equipe decida futuramente migrar a interface do terminal para uma aplicação móvel Android ou Web, a lógica central de cálculo de rega e os modelos de dados permanecerão intactos, sendo necessária apenas a substituição da camada de interface.
     \item \textbf{Ocultação de Informação:} Os atributos das classes de dados foram encapsulados com modificadores de acesso privados. A leitura e a modificação de variáveis sensíveis, como a data da última rega, dão-se obrigatoriamente através de métodos públicos controladores (\textit{Getters} e \textit{Setters}), impedindo estados inconsistentes.
     \item \textbf{Princípios SOLID:} A organização das classes e o fluxo de mensagens foram estruturados em conformidade com o acrónimo SOLID, blindando o software contra a rigidez e a fragilidade do código:
     \begin{itemize}[label=$\circ$, leftmargin=1.5em]
